@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.lla_sio.androidarvie.MainScreenActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Nom de l'utilisateur connecté -->
+        <TextView android:id="@+id/txtUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="10dip"
+            android:textSize="17dip"/>
+
+        <!--  Bouton pour afficher les abonnements de l'utilisateur -->
+        <Button android:id="@+id/btnViewMesAbonnements"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes abonnements"
+            android:layout_marginTop="25dip"/>
+
+        <!--  Bouton pour afficher les groupes de l'utilisateur -->
+        <Button android:id="@+id/btnViewMesGroupes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mes groupes"
+            android:layout_marginTop="25dip"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

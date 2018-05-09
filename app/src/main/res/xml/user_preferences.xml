@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="PREF_API"
+        android:title="@string/pref_title_api"
+        android:defaultValue="0"
+        android:entries="@array/pref_api_list_titles"
+        android:entryValues="@array/pref_api_list_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <EditTextPreference
+        android:key="PREF_API_URL_LOC"
+        android:title="@string/pref_title_api_url_loc"
+        android:defaultValue="@string/pref_default_api_url_loc"
+        android:inputType="text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditTextPreference
+        android:key="PREF_API_URL_DIST"
+        android:title="@string/pref_title_api_url_dist"
+        android:defaultValue="@string/pref_default_api_url_dist"
+        android:inputType="text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+</PreferenceScreen>
